@@ -1,0 +1,480 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* Default */
+:root{
+    /* Colors */
+    --color-white: #fff;
+    --color-blue: #00a8dd;
+    --color-gray: #a5a5a5;
+
+    /* Backgrounds */
+    --background-dark-gray: #10151b;
+    --background-gray: #181e25;
+    --background-light-gray: #2b323c;
+    --background-dark-blue: #005982;
+    --background-light-blue: #00b1d3;
+
+    /* Buttons */
+    --button-color-blue: #00a8dd;
+    --button-border-blue: #004e69;
+    --button-color-light-gray: #2b323c;
+    --button-border-black: #000;
+
+    /* Font Size */
+    --extra-large: 39.8px;
+    --large: 23px;
+    --medium: 19.3px;
+    --normal: 16px;
+    --small: 13.3px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+    color: var(--color-white);
+    
+}
+
+
+body{
+    background-color: var(--background-gray);
+}
+
+.container{
+    max-width: 1000px;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+/* First Section */
+
+.first{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+/* First Box*/
+.firstBox {
+    margin: 20px 0;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.firstTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: var(--extra-large);
+}
+
+.firstTitle>.prominence, .firstText{
+    font-size: var(--medium);
+}
+
+.boxInfo, .info{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+.boxInfo{
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.info{
+    max-width: 175px;
+    gap: 5px;
+    font-size: var(--small);
+}
+
+.infoText{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Card Box */
+.firstCards{
+    margin: 20px 0;
+    max-width: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--small);
+    gap: 10px
+}
+
+.card{
+    width: 235px;
+    padding: 25px;
+    background-color: var(--background-light-gray);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 5px
+}
+
+.cardTitle>h3{
+    font-size: var(--large);
+}
+
+.cardTitle>span{
+    font-weight: bold;
+    font-size: var(--normal);
+}
+
+/* Notice Section */
+.noticeSection{
+    padding: 50px 0;
+    width: 100%;
+    min-width: 280px;
+    background-color: var(--background-dark-gray);
+}
+
+.notice{
+    width: 100%;
+    color: var(--color-gray);
+    text-align: center;
+    font-size:  var(--small)
+}
+
+
+
+/* Second Section*/
+.second{
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    line-height: 24px;
+}
+
+.subtitle{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--extra-large);
+    font-weight: 400;
+    line-height: 1em;
+}
+
+/* Second: Step Box */
+.bonusSteps{
+    background-color: var(--background-light-gray);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stepTitle{
+    font-weight: bold;
+    font-size: var(--normal);
+}
+
+.stepText{
+    font-size: var(--small);
+}
+
+/* Second: Teacher's Presentation */
+.teacherCard{
+    background-color: var(--background-light-gray);
+    max-width: 450px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    gap: 30px
+}
+
+.teacherTitle{
+    font-size: var(--large);
+}
+
+.teacherBackground{
+    width: 100%;
+    background: linear-gradient(50deg, var(--background-light-gray), 23%,  var(--background-dark-gray));
+}
+
+.teacherBox{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.teacherInfos{
+    text-align: left;
+}
+
+.teacherText{
+    padding: 0 50px;
+}
+
+/* Second : Instructions */
+.instructionBox{
+    height: 100%;
+}
+
+.instructions{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.instructionCard{
+    background-color: var(--background-light-gray);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.instructionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--large);
+    font-weight: bold;
+}
+
+.instructionProminence{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(50deg, var(--background-dark-blue), var(--background-light-blue));
+}
+
+.instructionProminence>p{
+    font-weight: bold;
+    font-size: var(--medium);
+    width: 35%;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    min-width: 280px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+    gap: 10px;
+    background-color: var(--background-light-gray);
+}
+
+.footer>img{
+    background-color: transparent;
+    width: 55px;
+    height: 55px;
+}
+
+.footerLink{
+    text-decoration: none;
+}
+
+/* Lists */
+.list li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0
+}
+
+.customList li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.customList li::before{
+    content: "-";
+    position: absolute;
+    left: 0
+}
+
+/* Buttons */
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-size: var(--medium)
+}
+
+.button1{
+    width: 260px;
+    background-color: var(--button-color-blue);
+    box-shadow: 3px 3px var(--button-border-blue);
+}
+
+.button2{
+    background-color: var(--button-color-light-gray);
+    box-shadow: 3px 3px var(--button-border-black);
+}
+
+.button2>img{
+    width: 20px
+}
+
+/* Styles */
+
+    /* Icons */
+    .bigIcon{
+        height: 25px;
+        width: 25px;
+    }
+
+    .icon{
+        height: 18px;
+        width: 18px;
+    }
+
+    /* Fonts */
+    .prominence{
+        color: var(--color-blue);
+        font-size: 16px;
+    }
+
+    .capitalize{
+        text-transform: capitalize;
+    }
+
+    .uppercase{
+        text-transform: uppercase;
+    }
+
+    /* Hover */
+
+    .footerLink:hover{
+        border-bottom: solid var(--color-white);
+    }
+
+    .button:hover{
+        transform: scale(0.99);
+        box-shadow: none;
+    }
+
+/* Media Queries */
+
+@media screen and (max-width: 959px){  
+    .bonusSteps{
+        flex-wrap: wrap;
+    }
+    .step{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .second{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .firstBox{
+        align-items: center;
+    }
+    .firstTitle>span, .firstText{
+        text-align: center;
+    }
+    .firstCards{
+        justify-content: center;
+    }
+    .teacherCard{
+        width: 95%;
+    }
+    .card{
+        width: 75%;
+    }
+    .teacherTitle{
+        font-size: var(--medium);
+    }
+    .teacherText{
+        padding: 10px
+    }
+    .subtitle{
+        font-size: var(--large);
+        max-width: 100%;
+    }
+    .button2{
+        font-size: var(--normal);
+    }
+    .footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer>p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .firstTitle{
+        text-align: center;
+    }
+    .boxInfo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px
+    }
+    .teacherInfos>p{
+        font-size: var(--small);
+    }
+    .instructionTitle{
+        flex-direction: column-reverse;
+        text-align: center;
+        font-size: var(--medium);
+    }
+    .instructionProminence{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px
+    }
+    .instructionProminence>p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
