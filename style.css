@@ -296,7 +296,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 40px;
+    padding: 20px 40px;
     gap: 10px;
     background-color: var(--background-light-gray);
 }
@@ -386,7 +386,6 @@ body{
     }
 
     /* Hover */
-
     .footerLink:hover{
         border-bottom: solid var(--color-white);
     }
@@ -440,7 +439,6 @@ body{
     }
     .footer{
         flex-direction: column;
-        padding: 20px;
     }
     .footer>p{
         display: none;
