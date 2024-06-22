@@ -438,9 +438,6 @@ body{
         font-size: var(--large);
         max-width: 100%;
     }
-    .button2{
-        font-size: var(--normal);
-    }
     .footer{
         flex-direction: column;
         padding: 20px;
